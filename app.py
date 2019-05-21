@@ -15,9 +15,9 @@ collection = db.mars_info
 
 @app.route("/")
 def home():
-    return "hello"
-#    mars_info = collection.find_one()
-#    return  render_template('index.html', mars_info=mars_info)
+#    return "hello"
+    mars_info = collection.find_one()
+    return  render_template('index.html', mars_info=mars_info)
 
 @app.route("/scrape")
 def scrape():
